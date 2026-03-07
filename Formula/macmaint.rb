@@ -13,8 +13,16 @@ class Macmaint < Formula
     # Create a virtualenv
     venv = virtualenv_create(libexec, "python3.12")
     
-    # Install the package and its dependencies
-    venv.pip_install_and_link buildpath
+    # Install dependencies first
+    system libexec/"bin/pip", "install", "click>=8.1.0", "rich>=13.0.0", 
+           "psutil>=5.9.0", "openai>=1.0.0", "pydantic>=2.0.0", 
+           "pyyaml>=6.0.0", "python-dotenv>=1.0.0"
+    
+    # Then install the package
+    system libexec/"bin/pip", "install", buildpath
+    
+    # Create symlink
+    bin.install_symlink libexec/"bin/macmaint"
   end
 
   def caveats
