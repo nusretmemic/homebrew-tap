@@ -11,9 +11,6 @@ class Macmaint < Formula
 
   def install
     virtualenv_install_with_resources
-
-    # Install dependencies from requirements.txt
-    system libexec/"bin/pip", "install", "-r", "requirements.txt"
   end
 
   def caveats
