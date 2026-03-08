@@ -3,8 +3,8 @@ class Macmaint < Formula
 
   desc "AI-powered CLI maintenance agent for macOS"
   homepage "https://github.com/nusretmemic/macmaint"
-  url "https://github.com/nusretmemic/macmaint/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "8c7b83eb63f5a95aa0564bb4f32a09002382e304515586b113d87d612f94c97a"
+  url "https://github.com/nusretmemic/macmaint/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "15378e758909b2182ea0acf1f8ffe298832827702697c89e36a234ad66abcade"
   license "MIT"
 
   depends_on "python@3.12"
