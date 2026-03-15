@@ -4,10 +4,10 @@ class Macmaint < Formula
   desc "AI-powered conversational CLI maintenance agent for macOS"
   homepage "https://github.com/nusretmemic/macmaint"
 
-  url "https://github.com/nusretmemic/macmaint/archive/refs/tags/v0.9.4.tar.gz"
-  sha256 "67231832bfb689f49749a447bed44d4bbec34c6032f3cc4eb9cd8584551552a7"
+  url "https://github.com/nusretmemic/macmaint/archive/refs/tags/v0.9.5.tar.gz"
+  sha256 "ad5c2784d18d70d42ca4e8f179de3c5470004acf51343be7cf3a7f720c517aa0"
   license "MIT"
-  version "0.9.4"
+  version "0.9.5"
 
   # Development HEAD — install with: brew install --HEAD macmaint
   head "https://github.com/nusretmemic/macmaint.git", branch: "main"
